@@ -1,0 +1,25 @@
+body {
+
+    color: white;
+    background: url(/images/pavement.jpg);
+}
+
+#container {
+    max-width: 960px;
+    margin: 30px auto;
+}
+
+#progress {
+    height: 10px;
+    background-color: yellow;
+    bottom: 0;
+    position: fixed;
+}
+
+#image {
+    position: fixed;
+    bottom: 0px;
+    z-index: 1;
+    height: 100px;
+
+}
