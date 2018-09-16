@@ -1,25 +1,200 @@
+.navbar {
+    background-color: #181615;
+}
+
+.navbar .navbar-brand {
+    color: #fff700;
+}
+
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus {
+    color: #fded42;
+}
+
+.navbar .navbar-text {
+    color: #fded42;
+    font-weight: 500;
+}
+
+.navbar .navbar-text a {
+    color: #fded42;
+}
+
+.navbar .navbar-text a:hover,
+.navbar .navbar-text a:focus {
+    color: #fded42;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #fded42;
+    border-radius: .25rem;
+    margin: 0 0.25em;
+    font-weight: 700;
+}
+
+.navbar .navbar-nav .nav-link:not(.disabled):hover,
+.navbar .navbar-nav .nav-link:not(.disabled):focus {
+    color: #f6d321;
+}
+
+.navbar .navbar-nav .nav-item.active .nav-link,
+.navbar .navbar-nav .nav-item.active .nav-link:hover,
+.navbar .navbar-nav .nav-item.active .nav-link:focus,
+.navbar .navbar-nav .nav-item.show .nav-link,
+.navbar .navbar-nav .nav-item.show .nav-link:hover,
+.navbar .navbar-nav .nav-item.show .nav-link:focus {
+    color: #f6d321;
+}
+
+.navbar .navbar-toggle {
+    border-color: #c0392b;
+}
+
+.navbar .navbar-toggle:hover,
+.navbar .navbar-toggle:focus {
+    background-color: #c0392b;
+}
+
+.navbar .navbar-toggle .navbar-toggler-icon {
+    color: #fff700;
+}
+
+.navbar .navbar-collapse,
+.navbar .navbar-form {
+    border-color: #fff700;
+}
+
+.navbar .navbar-link {
+    color: #fff700;
+}
+
+.navbar .navbar-link:hover {
+    color: #f6d321;
+}
+
+@media (max-width: 575px) {
+    .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item {
+        color: #fff700;
+    }
+    .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+    .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+        color: #f6d321;
+    }
+    .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item.active {
+        color: #f6d321;
+        background-color: #c0392b;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item {
+        color: #fff700;
+    }
+    .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+    .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+        color: #f6d321;
+    }
+    .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item.active {
+        color: #f6d321;
+        background-color: #c0392b;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item {
+        color: #fff700;
+    }
+    .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+    .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+        color: #f6d321;
+    }
+    .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item.active {
+        color: #f6d321;
+        background-color: #c0392b;
+    }
+}
+
+@media (max-width: 1199px) {
+    .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item {
+        color: #fff700;
+    }
+    .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+    .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+        color: #f6d321;
+    }
+    .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item.active {
+        color: #f6d321;
+        background-color: #c0392b;
+    }
+}
+
+.navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item {
+    color: #fff700;
+}
+
+.navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+.navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+    color: #f6d321;
+}
+
+.navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item.active {
+    color: #f6d321;
+    background-color: #c0392b;
+}
+.carousel-caption {
+    font-weight: bold;
+    text-shadow: 2px 2px 3px black;
+}
+#nav {
+    background-color: #000000;
+}
 body {
-
+    background: url(/images/usa.jpg);
+    background-size: cover;
+}
+.btn-outline-primary {
+    font-weight: bold;
+}
+.navbar {
+    background-color: #000;
+}
+.indexphoto {
+    width: 100%;
+    height: auto;
+    border-radius: 5%;
+}
+.square {
+    background-color: black;
     color: white;
-    background: url(/images/pavement.jpg);
+    border-radius: 5%;
+    text-align: justify;
 }
-
-#container {
-    max-width: 960px;
-    margin: 30px auto;
+.square > h2 {
+    text-align: center;
 }
-
-#progress {
-    height: 10px;
-    background-color: yellow;
-    bottom: 0;
-    position: fixed;
+.square, .indexphoto, .carousel-inner {
+    box-shadow: 0 20px 30px rgba(0,0,0,0.7);
 }
-
-#image {
-    position: fixed;
-    bottom: 0px;
-    z-index: 1;
+.carousel-inner {
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+}
+.worker-container {
+    height: 90px;
+    margin-bottom: 15px;
+}
+.worker {
     height: 100px;
-
+    position: absolute;
+}
+.activeworker {
+    animation: moveright 3s 1s ease forwards;
+}
+@keyframes moveright {
+    0% {
+        right: 96%;
+    }
+    100% {
+        right: 0%;
+    }
 }
