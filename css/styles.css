@@ -102,6 +102,8 @@ body {
 .textindex {
     color: white;
     text-shadow: 2px 2px 5px blue;
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: justify;
 }
 .textindex h2 {
     text-align: center;
@@ -134,12 +136,9 @@ body {
     }
 }
 
-.textindex {
-    background-color: rgba(0, 0, 0, 0.9);
-}
 .footer {
     background-color: black;
-    height: 99px;
+    height: 140px;
     color: white;
 }
 .footer span img {
@@ -148,8 +147,16 @@ body {
     background-color: white;
     transition: transform 0.3s
 }
-.footer span a:nth-of-type(1) img:hover {
+.footer span a:nth-of-type(1) img {
     background-color: #3B5998;
+}
+.footer span a:nth-of-type(2) img {
+    background-color: #FF0000;
+}
+.footer span a:nth-of-type(3) img {
+    background-color: black;
+}
+.footer span a:nth-of-type(1) img:hover {
     transform: scale(1.2);
     transform: scale(1.2) rotate(-5deg)
 }
@@ -158,9 +165,14 @@ body {
     transform: scale(1.2) rotateX(-20deg);
 }
 .footer span a:nth-of-type(3) img:hover {
-    background-color: #e4405f;
+    
     transform: scale(1.2) rotate(5deg);
 }
 .footer p {
     margin: 0;
+    text-shadow: 2px 2px 5px blue;
+}
+.footer p:nth-child(1) {
+    font-size: 1.3rem;
+    font-weight: bold;
 }
