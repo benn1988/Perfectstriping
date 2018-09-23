@@ -5,17 +5,18 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+
     <style>
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
-</style>
-    
+        @import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+    </style>
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    
+
     <!-- Main CSS Styles Sheet -->
     <link rel="stylesheet" href="css/styles.css">
 
@@ -98,18 +99,18 @@
                 </a>
         </div>
     </main>
-    
+
     <div class="worker-container">
         <img src="images/tool.png" class="worker" id="worker" alt="Worker logo">
     </div>
-    
+
     <div class="container squares">
         <div class="row no-gutters pb-5">
             <div class="col-md-6 rounded textindex order-2 order-md-1">
                 <h2 class="pt-lg-2 pt-xl-4 pb-xl-3">Parking Lot Striping</h2>
                 <p class="px-3 px-xl-4"><strong>Perfect Striping</strong> is proud to be San Diego County`s premier Parking Lot Striping company. <span>We can help with your parking lot re-engineering and a new layout design from start to finish.</span> Organize and redesign your parking lot for an easy traffic flow, making it easy and safe <a href="contactus.html">Read More...</a></p>
             </div>
-            
+
             <div class="col-md-6 rounded order-1 order-md-2">
                 <img src="images/indexstriping.jpg" alt="Pic" class="img-fluid rounded">
             </div>
@@ -124,7 +125,7 @@
                 <h2 class="pt-lg-2 pt-xl-4 pb-xl-3">Sealcoating and Pavement Maintenance</h2>
                 <p class="px-3 px-xl-4">Our crew of sealcoating experts will develop a long-term plan of action for your asphalt driveway. <span>In combination with the top of the line materials, we can protect your asphalt for many years.</span> We know how important your driveway is to the safety of you, your family, and your car. That is why <a href="contactus.html">Read More...</a></p>
             </div>
-            
+
             <div class="col-md-6 rounded order-5 order-md-6">
                 <img src="images/indexsealcoating.jpg" alt="Sealcoating photo" class="img-fluid rounded">
             </div>
@@ -137,10 +138,10 @@
             </div>
         </div>
     </div>
-    
+
     <div class="d-flex flex-column justify-content-center footer">
-      <p class="align-self-center pb-3">Follow Us</p>
-       <span class="align-self-center pb-2">
+        <p class="align-self-center pb-3">Follow Us</p>
+        <span class="align-self-center pb-2">
             <a href="https://www.facebook.com/perfectstriping/" class="pr-3"><img src="images/facebook.svg" alt="Facebook logo" class="rounded"></a>
             <a href="https://www.youtube.com/user/perfectstripe1" class="pr-3"><img src="images/youtube-square.svg" alt="Youtube logo" class="rounded"></a>
             <a href="https://www.instagram.com/perfectstriping/"><img src="images/instagram.png" alt="Instagram logo" class="rounded"></a>
@@ -152,8 +153,17 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    
-    <script src="js/worker.js"></script>
-</body>
 
+    <script src="js/worker.js"></script>
+
+    <script>$(document).on("scroll", function () { 
+            var pageTop = $(document).scrollTop();
+            var pageBottom = pageTop + $(window).height();
+            var tags = $(".textindex");
+            for (var i = 0; i < tags.length; i = i + 1) {     var tag = tags[i];
+                if ($(tag).position().top < pageBottom) {     $(tag).addClass("visible");
+                } 
+                else { $(tag).removeClass( "visible") } } }); 
+                </script>
+    </body>
 </html>

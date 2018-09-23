@@ -173,9 +173,28 @@ body {
     font-size: 1.3rem;
     font-weight: bold;
 }
+.squares img:hover, .squares .textindex:hover {
+    transform: scale(1.05);
+}
+.squares img, .squares .textindex {
+    transition: transform 0.5s;
+}
+.textindex {
+  opacity: 0;
+  transform: translate(2000px, 0); 
+  transition: all 1s;
+}
+
+.textindex.visible {
+  opacity: 1;
+  transform: translate(0, 0); 
+}
 
 @media screen and (max-width: 992px) and (min-width: 768px) {
     .textindex span {
         display: none;
+    }
+    h2 {
+        font-size: 1.4rem
     }
 }
