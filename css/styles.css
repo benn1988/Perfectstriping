@@ -112,10 +112,7 @@ body {
 .textindex, .indexphoto, .carousel-inner {
     box-shadow: 0 20px 30px rgba(0,0,0,0.7);
 }
-.carousel-inner {
-    border-bottom-left-radius: 2%;
-    border-bottom-right-radius: 2%;
-}
+
 .worker-container {
     height: 90px;
     margin-bottom: 15px;
@@ -175,4 +172,10 @@ body {
 .footer p:nth-child(1) {
     font-size: 1.3rem;
     font-weight: bold;
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    .textindex span {
+        display: none;
+    }
 }
