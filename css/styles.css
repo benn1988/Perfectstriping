@@ -1,3 +1,7 @@
+body {
+    font-family: Roboto, Arial, sans-serif;
+}
+
 .navbar {
     background-color: #181615;
 }
@@ -90,7 +94,7 @@
     text-shadow: 2px 2px 3px black;
 }
 body {
-    background: url(/images/usa.jpg);
+    background: url(/images/asphalt.jpg);
     background-size: cover;
 }
 .btn-outline-primary {
@@ -102,7 +106,7 @@ body {
 .textindex {
     color: white;
     text-shadow: 2px 2px 5px blue;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 1);
     text-align: justify;
 }
 .textindex h2 {
@@ -186,6 +190,14 @@ body {
 
 .textindex.visible {
   transform: translate(0, 0); 
+}
+
+.aboutusp {
+    color: white;
+}
+
+.modal-body p {
+    text-align: justify;
 }
 
 @media screen and (max-width: 992px) and (min-width: 768px) {
