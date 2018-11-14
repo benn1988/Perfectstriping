@@ -1,46 +1,48 @@
 body {
     font-family: Roboto, Arial, sans-serif;
+    background-color: #C6C6C6;
 }
-
 .navbar {
     background-color: #181615;
 }
-
+.nav-item::after {
+    content:'';
+    display:block;
+    width:0px;height:2px;
+    background:#f6d321;
+    transition: 0.2s;
+}
+.nav-item:hover::after {
+    width:100%;
+}
 .navbar .navbar-brand {
     color: #fff700;
 }
-
 .navbar .navbar-brand:hover,
 .navbar .navbar-brand:focus {
     color: #fded42;
 }
-
 .navbar .navbar-text {
     color: #fded42;
     font-weight: 500;
 }
-
 .navbar .navbar-text a {
     color: #fded42;
 }
-
 .navbar .navbar-text a:hover,
 .navbar .navbar-text a:focus {
     color: #fded42;
 }
-
 .navbar .navbar-nav .nav-link {
     color: #fded42;
     border-radius: .25rem;
     margin: 0 0.25em;
     font-weight: 700;
 }
-
 .navbar .navbar-nav .nav-link:not(.disabled):hover,
 .navbar .navbar-nav .nav-link:not(.disabled):focus {
     color: #f6d321;
 }
-
 .navbar .navbar-nav .nav-item.active .nav-link,
 .navbar .navbar-nav .nav-item.active .nav-link:hover,
 .navbar .navbar-nav .nav-item.active .nav-link:focus,
@@ -49,42 +51,33 @@ body {
 .navbar .navbar-nav .nav-item.show .nav-link:focus {
     color: #f6d321;
 }
-
 .navbar .navbar-toggle {
     border-color: #c0392b;
 }
-
 .navbar .navbar-toggle:hover,
 .navbar .navbar-toggle:focus {
     background-color: #c0392b;
 }
-
 .navbar .navbar-toggle .navbar-toggler-icon {
     color: #fff700;
 }
-
 .navbar .navbar-collapse,
 .navbar .navbar-form {
     border-color: #fff700;
 }
-
 .navbar .navbar-link {
     color: #fff700;
 }
-
 .navbar .navbar-link:hover {
     color: #f6d321;
 }
-
 .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item {
     color: #fff700;
 }
-
 .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:hover,
 .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:focus {
     color: #f6d321;
 }
-
 .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item.active {
     color: #f6d321;
     background-color: #c0392b;
@@ -92,10 +85,6 @@ body {
 .carousel-caption {
     font-weight: bold;
     text-shadow: 2px 2px 3px black;
-}
-body {
-    background: url(/images/asphalt.jpg);
-    background-size: cover;
 }
 .btn-outline-primary {
     font-weight: bold;
@@ -112,13 +101,11 @@ body {
 .textindex h2 {
     text-align: center;
 }
-
 .textindex, .indexphoto, .carousel-inner {
     box-shadow: 0 20px 30px rgba(0,0,0,0.7);
 }
-
 .worker-container {
-    height: 90px;
+    height: 120px;
     margin-bottom: 15px;
 }
 .worker {
@@ -136,7 +123,6 @@ body {
         right: 0%;
     }
 }
-
 .footer {
     background-color: black;
     height: 140px;
@@ -146,7 +132,10 @@ body {
     width: 30px;
     height: 30px;
     background-color: white;
-    transition: transform 0.3s
+    transition: transform 0.3s;
+    -moz-transition: transform 0.3s;
+    -webkit-transition: transform 0.3s;
+    -o-transition: transform 0.3s;
 }
 .footer span a:nth-of-type(1) img {
     background-color: #3B5998;
@@ -158,16 +147,23 @@ body {
     background-color: black;
 }
 .footer span a:nth-of-type(1) img:hover {
-    transform: scale(1.2);
-    transform: scale(1.2) rotate(-5deg)
+    transform: scale(1.2) rotate(-5deg);
+    -moz-transition: scale(1.2) rotate(-5deg);
+    -webkit-transition: scale(1.2) rotate(-5deg);
+    -o-transition: scale(1.2) rotate(-5deg);
 }
 .footer span a:nth-of-type(2) img:hover {
     background-color: #FF0000;
     transform: scale(1.2) rotateX(-20deg);
+    -moz-transition: scale(1.2) rotateX(-20deg);
+    -webkit-transition: scale(1.2) rotateX(-20deg);
+    -o-transition: scale(1.2) rotateX(-20deg);
 }
 .footer span a:nth-of-type(3) img:hover {
-    
     transform: scale(1.2) rotate(5deg);
+    -moz-transition: scale(1.2) rotate(5deg);
+    -webkit-transition: scale(1.2) rotate(5deg);
+    -o-transition: scale(1.2) rotate(5deg);
 }
 .footer p {
     margin: 0;
@@ -179,23 +175,35 @@ body {
 }
 .squares img:hover, .squares .textindex:hover {
     transform: scale(1.05);
+    -moz-transition: scale(1.05);
+    -webkit-transition: scale(1.05);
+    -o-transition: scale(1.05);
 }
 .squares img, .squares .textindex {
     transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -webkit-transition: transform 0.5s;
+    -o-transition: transform 0.5s;
 }
 .textindex {
-  transform: translate(50px, 0); 
-  transition: all 1s;
+    transform: translate(50px, 0);
+    -moz-transition: translate(50px, 0);
+    -webkit-transition: translate(50px, 0);
+    -o-transition: translate(50px, 0);
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
 }
-
 .textindex.visible {
-  transform: translate(0, 0); 
+    transform: translate(0, 0);
+    -moz-transition: translate(0, 0);
+    -webkit-transition: translate(0, 0);
+    -o-transition: translate(0, 0);
 }
-
 .aboutusp {
     color: white;
 }
-
 .modal-body p {
     text-align: justify;
 }
@@ -205,7 +213,6 @@ body {
 .modal-header {
     background-color: #ECECEC;
 }
-
 
 @media screen and (max-width: 992px) and (min-width: 768px) {
     .textindex span {
