@@ -5,16 +5,6 @@ body {
 .navbar {
     background-color: #181615;
 }
-.nav-item::after {
-    content:'';
-    display:block;
-    width:0px;height:2px;
-    background:#f6d321;
-    transition: 0.2s;
-}
-.nav-item:hover::after {
-    width:100%;
-}
 .navbar .navbar-brand {
     color: #fff700;
 }
@@ -283,6 +273,30 @@ body {
     }
     h2 {
         font-size: 1.4rem
+    }
+}
+
+@media (min-width: 992px) {
+    .nav-item::after {
+        content:'';
+        display:block;
+        width:0px;
+        height:2px;
+        background:#f6d321;
+        transition: 0.2s;
+        -moz-transition: 0.2s;
+        -webkit-transition: 0.2s;
+        -o-transition: 0.2s;
+    }
+    .nav-item:hover::after {
+        width:100%;
+    }
+    .nav-item.active::after {
+        content:'';
+        display:block;
+        width:100%;
+        height:2px;
+        background:#f6d321;
     }
 }
 
