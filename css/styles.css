@@ -175,7 +175,7 @@ body {
     -webkit-transition: transform 0.5s;
     -o-transition: transform 0.5s;
 }
-.textindex {
+/*.textindex {
     transform: translate(50px, 0);
     -moz-transition: translate(50px, 0);
     -webkit-transition: translate(50px, 0);
@@ -190,7 +190,7 @@ body {
     -moz-transition: translate(0, 0);
     -webkit-transition: translate(0, 0);
     -o-transition: translate(0, 0);
-}
+}*/
 .aboutusp {
     color: white;
 }
