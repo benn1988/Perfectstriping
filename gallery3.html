@@ -2,7 +2,6 @@
 <html lang="en">
 
     <head>
-        <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -10,17 +9,9 @@
             @import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
         </style>
 
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
-        <!-- Font Awesome -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-
-        <!-- Main CSS Styles Sheet -->
-        <link rel="stylesheet" href="css/styles.css">
-        
-        <!-- BaguetteBox plugin Styles Sheet -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.0/baguetteBox.min.css">
+        <link rel="stylesheet" href="css/styles.css">
 
         <title>Photos of our work</title>
         
@@ -32,10 +23,9 @@
     </head>
 
     <body>
-
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container">
-                <a class="navbar-brand mr-0 btn" href="index.html"><img src="images/logo.png" id="logo" alt="Perfect Striping Logo"></a>
+                <a class="navbar-brand mr-0 btn" href="index.html"><img src-data="logo" id="logo" alt="Perfect Striping Logo"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     </button>
@@ -207,17 +197,17 @@
             <p class="align-self-center pb-3">Follow Us</p>
             <span class="align-self-center pb-2">
                 <a href="https://www.facebook.com/perfectstriping/" class="pr-3"><img src="images/facebook.svg" alt="Facebook logo" class="rounded"></a>
-                <a href="https://www.youtube.com/user/perfectstripe1" class="pr-3"><img src="images/youtube-square.svg" alt="Youtube logo" class="rounded"></a>
+                <a href="https://www.youtube.com/user/perfectstripe1" class="pr-3"><img src="images/youtube.svg" alt="Youtube logo" class="rounded"></a>
                 <a href="https://www.instagram.com/perfectstriping/"><img src="images/instagram.svg" alt="Instagram logo" class="rounded"></a>
             </span>
             <p class="pl-5 pt-2 pb-3">Lic # 983424</p>
         </div>
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
         <script src="js/modernizr-webp.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.0/baguetteBox.min.js"></script>
         
         <script>
             var $ = function (id) {
@@ -226,23 +216,30 @@
             };
             Modernizr.on('webp', function(result) {
               if (result) {
-                  
-/*                  var imagesZoom = window.document.getElementsByClassName("lightbox");
-                  for (let i = 0; i < imagesZoom.length; i += 1) {
-                      let newAttr = imagesZoom[i].getAttribute("href-data").concat(".webp")
-                      imagesZoom[i].setAttribute("data-at-800", newAttr);
-                  }
+                  $("logo").setAttribute("src", $("logo").getAttribute("src-data").concat(".webp"));
                   var images = window.document.getElementsByClassName("img-fluid");
                   for (let i = 0; i < images.length; i += 1) {
                       images[i].setAttribute("src", images[i].getAttribute("src-data").concat(".webp"));
-                  }*/
+                  }
+                  var imagesDiv = window.document.getElementsByClassName("lightbox");
+                  for (let i = 0; i < images.length; i += 1) {
+                      imagesDiv[i].setAttribute("data-at-420", imagesDiv[i].getAttribute("src-data").concat("_small.webp"));
+                      imagesDiv[i].setAttribute("data-at-800", imagesDiv[i].getAttribute("src-data").concat(".webp"));
+                  }
               } else {
-                window.console.log("webp nu");
+                  $("logo").setAttribute("src", $("logo").getAttribute("src-data").concat(".webp"));
+                  var images = window.document.getElementsByClassName("img-fluid");
+                    for (let i = 0; i < images.length; i += 1) {
+                      images[i].setAttribute("src", images[i].getAttribute("src-data").concat(".jpg"));
+                  }
+                  var imagesDiv = window.document.getElementsByClassName("lightbox");
+                    for (let i = 0; i < images.length; i += 1) {
+                      imagesDiv[i].setAttribute("data-at-420", imagesDiv[i].getAttribute("src-data").concat("_small.jpg"));
+                      imagesDiv[i].setAttribute("data-at-800", imagesDiv[i].getAttribute("src-data").concat(".jpg"));
+                  }
               }
             });
         </script>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.0/baguetteBox.min.js"></script>
         <script>
             baguetteBox.run('.compact-gallery', { animation: 'slideIn'});
         </script>
