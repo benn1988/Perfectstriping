@@ -91,25 +91,25 @@
                     <h2>Compact Gallery</h2>
                 </div>
                 <div class="row no-gutters">
-                   <div class="col-md-6 col-lg-4 item zoom-on-hover striping">
-                        <a class="lightbox" href="images/gallery_striping1.jpg">
-                            <img class="img-fluid image" src="images/gallery_striping1.jpg" alt="">
+                   <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                        <a class="lightbox" href="" href-data="images/gallery_striping1.jpg">
+                            <img class="img-fluid image" src="" src-data="images/gallery_striping1.jpg" alt="">
                             <span class="description">
                                 <span class="description-heading">Parking Lot Striping</span>
                                 <span class="description-body">Perfect Striping is proud to be San Diego County`s premier Parking Lot Striping company.</span>
                             </span>
                         </a>
                     </div>
-                    <div class="col-md-6 col-lg-4 item zoom-on-hover court">
+                    <div class="col-md-6 col-lg-4 item zoom-on-hover">
                         <a class="lightbox" href="images/gallery_court1.jpg">
-                            <img class="img-fluid image" src="images/gallery_court1.jpg" alt="">
+                            <img class="img-fluid image" src="images/gallery_court1.jpg.webp" alt="">
                             <span class="description">
                                 <span class="description-heading">Game Court Painting</span>
                                 <span class="description-body">Perfect Striping can paint game courts and lines for any sport or game one can imagine.</span>
                             </span>
                         </a>
                     </div>
-                    <div class="col-md-6 col-lg-4 item zoom-on-hover redcurb">
+                    <div class="col-md-6 col-lg-4 item zoom-on-hover">
                         <a class="lightbox" href="images/gallery_redcurb3.jpg">
                             <img class="img-fluid image" src="images/gallery_redcurb3.jpg" alt="">
                             <span class="description">
@@ -218,6 +218,25 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
         <script src="js/baguetteBox.min.js"></script>
+        <script src="js/modernizr-webp.js"></script>
+        
+        <script>
+            var $ = function (id) {
+                "use strict";
+                return window.document.getElementById(id);
+            };
+            Modernizr.on('webp', function(result) {
+              if (result) {
+                  var images = window.document.getElementsByClassName("lightbox");
+                  for (let i = 0; i < images.length; i += 1) {
+                      images[i].setAttribute("href", images[i].getAttribute("href-data"));
+                  }
+              } else {
+                window.console.log("webp nu");
+              }
+            });
+        </script>
+        
         <script>
             baguetteBox.run('.compact-gallery', { animation: 'slideIn'});
         </script>
