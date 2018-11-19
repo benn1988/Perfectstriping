@@ -134,7 +134,7 @@ body {
     background-color: #FF0000;
 }
 .footer span a:nth-of-type(3) img {
-    background-color: black;
+    background-color: #cd486b;
 }
 .footer span a:nth-of-type(1) img:hover {
     transform: scale(1.2) rotate(-5deg);
