@@ -1,6 +1,7 @@
 body {
     font-family: Roboto, Arial, sans-serif;
     background-color: #C6C6C6;
+    color: black;
 }
 .navbar {
     background-color: #181615;
@@ -40,9 +41,6 @@ body {
 .navbar .navbar-nav .nav-item.show .nav-link:hover,
 .navbar .navbar-nav .nav-item.show .nav-link:focus {
     color: #f6d321;
-}
-.navbar .navbar-toggle {
-    border-color: #c0392b;
 }
 .navbar .navbar-toggle:hover,
 .navbar .navbar-toggle:focus {
@@ -189,6 +187,10 @@ body {
     background-color: #ECECEC;
 }
 
+.card-header button {
+    font-weight: bold;
+}
+
 .gallery-block{
   padding-bottom: 60px;
   padding-top: 60px;
@@ -246,6 +248,14 @@ body {
   font-weight: 300;
 }
 
+.gallery-block h2 a {
+    color: black;
+}
+
+.fa-star  {
+    color: #FFD700;
+    font-size: 1.5rem;
+}
 @media screen and (max-width: 992px) and (min-width: 768px) {
     .textindex span {
         display: none;
