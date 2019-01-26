@@ -308,7 +308,7 @@ body {
     font-family: serif;
     border-style: outset;
     border-width: 3px;
-
+    border-color: #D7D7D7;
 }
 
 .contactInfo a:link {
@@ -323,6 +323,7 @@ body {
 address {
     font-style: italic;
     font-size: 1.2rem;
+    font-weight: bold;
 }
 
 .phone {
