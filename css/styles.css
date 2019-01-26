@@ -311,27 +311,23 @@ body {
     border-color: #D7D7D7;
 }
 
-.contactInfo a:link {
+.contactInfo a:link, .contactInfo h1 {
     text-decoration: none;
     color: #353839;
     background: -webkit-linear-gradient(#4F86F7, #00468C);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-shadow: 1px 1px #353839;
+    text-shadow: 1px 1px #3B5998;
 }
-
 address {
     font-style: italic;
     font-size: 1.2rem;
     font-weight: bold;
 }
 
-.phone {
-    font-size: 1.8rem;
-}
-
-.email {
-    font-size: 1.5rem;
+.email, .phone {
+    font-size: 1.7rem;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 992px) and (min-width: 768px) {
