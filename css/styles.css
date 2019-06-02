@@ -171,6 +171,7 @@ body {
 
 .footer span a:nth-of-type(1) img:hover {
     transform: scale(1.2) rotate(-5deg);
+    transition: scale(1.2) rotate(-5deg);
     -moz-transition: scale(1.2) rotate(-5deg);
     -webkit-transition: scale(1.2) rotate(-5deg);
     -o-transition: scale(1.2) rotate(-5deg);
@@ -179,6 +180,7 @@ body {
 .footer span a:nth-of-type(2) img:hover {
     background-color: #FF0000;
     transform: scale(1.2) rotateX(-20deg);
+    transition: scale(1.2) rotateX(-20deg);
     -moz-transition: scale(1.2) rotateX(-20deg);
     -webkit-transition: scale(1.2) rotateX(-20deg);
     -o-transition: scale(1.2) rotateX(-20deg);
@@ -186,6 +188,7 @@ body {
 
 .footer span a:nth-of-type(3) img:hover {
     transform: scale(1.2) rotate(5deg);
+    transition: scale(1.2) rotate(5deg);
     -moz-transition: scale(1.2) rotate(5deg);
     -webkit-transition: scale(1.2) rotate(5deg);
     -o-transition: scale(1.2) rotate(5deg);
@@ -204,6 +207,7 @@ body {
 .squares img:hover,
 .squares .textindex:hover {
     transform: scale(1.05);
+    transition: scale(1.05);
     -moz-transition: scale(1.05);
     -webkit-transition: scale(1.05);
     -o-transition: scale(1.05);
@@ -315,6 +319,7 @@ body {
     text-decoration: none;
     color: #353839;
     background: -webkit-linear-gradient(#4F86F7, #00468C);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 1px 1px #3B5998;
