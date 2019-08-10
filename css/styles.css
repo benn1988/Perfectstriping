@@ -204,22 +204,6 @@ body {
     font-weight: bold;
 }
 
-.squares img:hover,
-.squares .textindex:hover {
-    transform: scale(1.05);
-    transition: scale(1.05);
-    -moz-transition: scale(1.05);
-    -webkit-transition: scale(1.05);
-    -o-transition: scale(1.05);
-}
-
-.squares img,
-.squares .textindex {
-    transition: transform 0.5s;
-    -moz-transition: transform 0.5s;
-    -webkit-transition: transform 0.5s;
-    -o-transition: transform 0.5s;
-}
 
 .aboutusp {
     color: white;
