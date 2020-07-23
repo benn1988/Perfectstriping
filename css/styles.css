@@ -319,6 +319,10 @@ address {
     font-weight: bold;
 }
 
+label {
+    margin-bottom: 0 !important;
+}
+
 @media screen and (max-width: 992px) and (min-width: 768px) {
     .textindex span {
         display: none;
