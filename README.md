@@ -1,1 +1,1 @@
-https://perfectstriping.netlify.app
+Redesigned and rebuilt www.perfectstriping.com from scratch. Audited the customer to identify his needs and build a personalized website by using prototypes, user personas, and card sorting. Optimized images, used next-generation webp format and SVG vector-based icons. All these implementations led to improvements in: Load Time - 2.29s vs 7.46s (325% faster), Bytes In - 880kb vs 2413kb (275% difference), Requests per Page - 29 vs 116 (400% less).
